@@ -1,0 +1,95 @@
+body{
+    font-family: arial;
+}
+
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+
+    width: 550px;
+			background: transparent;
+			border-radius: 3px;
+			box-shadow: 0px 8px 10px rgba(0,0,0, .5);
+}
+
+.relogio div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    width: 150px;
+    color: white;
+    background: black;
+    border-radius: 6px;
+	letter-spacing: 3px;
+    font-size: 60px;
+}
+
+.relogio #legenda{
+    font-size: 17px;
+}
+
+.clock{
+    display: flex;
+			justify-content: center;
+			align-items: center;
+            transform: translate(0%,50%);
+}
+
+html{
+    background: linear-gradient(70deg, black,orange);
+    height: 100vh;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    margin-top: 5%;
+    text-align: center;
+    width: 30%;
+    padding: 1rem ;
+    background: linear-gradient(70deg, black,rgb(154, 102, 5));
+    box-shadow: 0px 8px 10px;
+    border-radius: 3px;
+}
+
+header img{
+    max-width: 80px;
+    animation: rick 4s ease alternate infinite;
+}
+@keyframes rick {
+    0%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: translateY(15px);
+    }
+}
+
+
+header h1{
+    color: white;
+    letter-spacing: 2px;
+}
+
+header h1::before{
+    content: '</';
+}
+header h1::after{
+    content: '>';
+}
+
+h2{
+    position:absolute;
+    top: -36%;
+    color: white;
+    font-size: 30px;
+}
